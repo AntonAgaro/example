@@ -1,10 +1,8 @@
 .promo {
-    position: relative;
     padding-top: 58px;
     padding-bottom: 80px;
-    width: 1920px;
-   height: 800px;
-   background: url(../../img/promo_section/background.png) center (center / cover) no-repeat;
+    min-height: 100vh;
+   background: url(../../img/promo_section/background.png) center center / cover no-repeat ;
    &__subsubtitle {
     margin: 0 auto;
     margin-top: 60px;
@@ -83,18 +81,16 @@
 .logo {
     width: 96px;
     height: 100px;
-    position: absolute;
-    top: 16px;
-    left: 388px;
 }
 .menu {
     width: 600px;
     display: flex;
     justify-content: space-between;
+    align-items:center;
     text-decoration: none;
     list-style: none;
     margin: 0px auto;
-    margin-left: 150px;
+    margin-left: 50px;
     padding-left: 0;
     &__link {
         color: #FFFFFF;
@@ -116,9 +112,6 @@
     }
 }
 .answers {
-    position: absolute;
-    right: 391px;
-    top: 43px;
     display: flex;
     justify-content: space-between;
     color: #ffffff;
@@ -146,13 +139,15 @@
         border-radius: 78px;
         border: none;
         background-color: $main-color;
-    }
-    &__link {
         text-transform: uppercase;
         text-decoration: none;
         font-size: 12px;
         font-weight: 300;
         color: #ffffff;
     }
-    
+}
+.min1200 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
