@@ -1,0 +1,53 @@
+.work {
+    padding: 51px 0px 56px 0px;
+    &__title {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &__divider {
+        width: 146px;
+        margin: 0 auto;
+        margin-top: 24px;
+        height: 2px;
+        background-color: $main-color;
+    }
+    &__subtitle {
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 21px;
+        font-weight: 300;
+    }
+    &__wrapper {
+        margin-top: 41px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+    }
+    &__item {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      text-align: center;
+    }
+    &__text {
+        margin-top: 28px;
+    }
+    &__text-title {
+        font-size: 16px;
+        color: $main-color;
+    }
+    &__text-descr {
+        margin-top: 16px;
+        font-size: 12px;
+        font-weight: 500;
+        color: #3a3a3a;
+        text-align: justify;
+    }
+    &__img {
+        width: 100%;
+    }
+}

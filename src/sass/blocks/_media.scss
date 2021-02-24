@@ -50,6 +50,16 @@
             font-size: 9px;
         }
     }
+    .work {
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 30px;
+        }
+        &__text-descr {
+            text-align: center;
+            align-items: center;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -105,6 +115,40 @@
             width: 134px;
             margin-left: 5px;
             font-size: 10px;
+        }
+    }
+    .price {
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 10px;
+        }
+        &__form {
+            flex-flow: column;
+            input {
+                margin-bottom: 5px;
+            }
+            &-icon {
+                top: -17%;
+            }
+            &-button {
+                bottom: -7%;
+            }
+        }
+    }
+    .schema {
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 40px;
+        }
+        &__wrapper2 {
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            row-gap: 40px;
+        }
+    }
+    .reviews {
+        &__slider-wrapper {
+            width: auto;
         }
     }
 }
@@ -214,6 +258,62 @@
             }
         }
     }
+    .advantages {
+        &__wrapper {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .work {
+        &__wrapper {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .agent {
+        &__title {
+            font-size: 23px;
+        }
+        &__subtitle {
+            font-size: 17px;
+        }
+    }
+    .price {
+        &__title {
+            font-size: 23px;
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__wrapper {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__item {
+            margin: 0 10px;
+        }
+        &__title-beforeform {
+            font-size: 23px;
+        }
+        &__form {
+            margin: 79px 10px 0px 10px;
+        }
+    }
+    .managers {
+        &__title {
+            font-size: 20px;
+        }
+        &__subtitle {
+            font-size: 14px;
+        }
+    }
+    .reviews {
+        &__slider-prev {
+            top: 13%;
+            left: 19%;
+        }
+        &__slider-next {
+            top: 13%;
+            right: 19%;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -249,5 +349,19 @@
         }
     }
 
-    
+    .advantages {
+        &__title {
+            font-size: 21px;
+        }
+        &__item {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        &__item_descr {
+            font-size: 12px;
+        }
+        &__item_subtitle {
+            font-size: 14px;
+        }
+    }
 }
