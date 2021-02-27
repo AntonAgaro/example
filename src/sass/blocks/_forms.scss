@@ -1,0 +1,61 @@
+.forms {
+    padding: 58px 0 78px 0;
+    background: url('../../img/promo_section/background.png') center center / cover no-repeat;
+    &__text {
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        background-color: #25333c;
+        padding: 15px 0 18px 0;
+        max-width: 895px;
+        &-title {
+            font-size: 19px;
+            font-weight: 700;
+        }
+        &-subtitle {
+            font-size: 14px;
+            font-weight: 500;
+
+        }
+    }
+    &__form {
+        max-width: 895px;
+        margin: 0 auto;
+        padding: 18px 0 27px 0;
+        background-color:rgba(255,255,255, 0.3);
+        input {
+            width: 100%;
+            font-size: 13px;
+            font-weight: 300;
+            color: #575757;
+            border-radius: 25px;
+            border: none;
+            padding: 18px 0 18px 27px;
+            outline: none;
+
+        }
+        &-wrapper {
+            margin: 14px 37px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(200px, auto));
+            grid-template-rows: repeat(2, auto);
+            column-gap: 5px;
+            row-gap: 5px;
+        }
+        &-button {
+            display: block;
+            margin: 0 auto;
+            margin-top: 17px;
+            color: #fff;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 16px 29px;
+            
+        }
+    }
+}
+#message {
+    grid-column: 1 / 4;
+}

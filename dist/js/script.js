@@ -40,5 +40,22 @@ document.addEventListener('DOMContentLoaded', () => {
     next.addEventListener('click', () => {
         plusSlides(1);
     });
+
+    // Кнопка pageUp
+   
+      const pageUpBtn = document.querySelector('.pageup');
+
+      function activeBtn() {
+          const scrolled = window.pageYOffset;
+          const coords = document.documentElement.clientHeight;
+          if (scrolled > coords) {
+              pageUpBtn.classList.add('active');
+          }
+          if (scrolled < coords) {
+              pageUpBtn.classList.remove('active');
+          }
+      }
+      window.addEventListener('scroll', activeBtn);
+        
           
 });

@@ -60,6 +60,11 @@
             align-items: center;
         }
     }
+    .footer {
+        &__questions {
+            margin-left: 70px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -151,6 +156,25 @@
             width: auto;
         }
     }
+    .footer {
+        &__title {
+            font-size: 8px;
+        } 
+        &__questions {
+            margin-left: 20px;
+            display: block;
+            text-align: center;
+          &-phone {
+              font-size: 6px;
+          }
+          &-quest{
+              font-size: 10px;
+          }
+          &-button {
+            padding: 7px 4px;
+          }
+        }
+    }    
 }
 
 @media (max-width: 768px) {
@@ -314,6 +338,56 @@
             right: 19%;
         }
     }
+    .forms {
+        &__text {
+            width: auto;
+        }
+        &__form {
+            &-wrapper {
+                width: auto;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            input {
+                font-size: 8px;
+            }
+        }
+    }
+    .map {
+        &__descr {
+            width: auto;
+        }
+    }
+    .footer {
+        &__title {
+            font-size: 8px;
+        } 
+        &__wrapper {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        &__questions {
+          &-phone {
+              font-size: 4px;
+          }
+          &-quest{
+              font-size: 6px;
+          }
+          &-button {
+            padding: 2px 4px;
+            font-size: 7px;
+          }
+        }
+        &__underwrapper-policy{
+            a {
+                font-size: 6px;
+            }
+        }
+        &__underwrapper-scratch, &__underwrapper-site {
+            font-size: 7px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }    
 }
 
 @media (max-width: 576px) {
@@ -364,4 +438,20 @@
             font-size: 14px;
         }
     }
+    .forms {
+        &__form {
+            input {
+                padding-left: 7px;
+            }
+        }
+    }
+    .map {
+        &__descr {
+            display: none;
+        }
+        &__triangle {
+            display: none;
+        }
+    }
+    
 }

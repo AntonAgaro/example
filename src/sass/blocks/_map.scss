@@ -1,0 +1,37 @@
+.map {
+    height: 500px;
+    &__wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    &__triangle {
+        position: absolute;
+        right: 100%;
+        top: 59px;
+        border: 20px solid transparent; border-right: 20px solid white;
+    }
+    &__descr {
+        position: absolute;
+        left: 57%;
+        top: 29%;
+        width: 308px;
+        height: 156px;
+        padding: 30px 0 30px 34px;
+        background-color: #fff;
+        &-title {
+            color: $main-color;
+            font-weight: 500;
+            font-size: 15px;
+        }
+        &-text {
+            color: #3a3a3a;
+            font-weight: 300;
+            font-size: 12px;
+        }
+        a {
+            font-size: 12px;
+            color: $main-color;
+        }
+    }
+}
