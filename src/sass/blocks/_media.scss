@@ -349,6 +349,7 @@
             }
             input {
                 font-size: 8px;
+                padding: 9px 0 10px 13px;
             }
         }
     }
@@ -453,5 +454,7 @@
             display: none;
         }
     }
-    
+    .modal {
+        width: 100%;
+    }
 }

@@ -1,12 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
     //Выплывающее меню
     const hamburger = document.querySelector('.hamburger'),
-          menu = document.querySelector('.menu');
+          menu = document.querySelector('.menu'),
+          menuClose = document.querySelector('.menu__close');
     
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('hamburger_active');
         menu.classList.toggle('menu_active');
+        menuClose.classList.toggle('active');
     });   
+    menuClose.addEventListener('click', () => {
+        hamburger.classList.toggle('hamburger_active');
+        menu.classList.toggle('menu_active');
+        menuClose.classList.toggle('active');
+    });
+
     
     //Slider
     const slides = document.querySelectorAll('.reviews__slider-wrapper_client'),

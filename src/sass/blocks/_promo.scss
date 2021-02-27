@@ -91,6 +91,15 @@
     margin: 0px auto;
     margin-left: 50px;
     padding-left: 0;
+    &__close {
+        color: $main-color;
+        font-size: 25px;
+        position: fixed;
+        right: 43px;
+        top: 144px;
+        z-index: 99999;
+        display: none;
+    }
     &__link {
         color: #FFFFFF;
         text-decoration: none;
