@@ -57,5 +57,23 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       window.addEventListener('scroll', activeBtn);
         
-          
+      // Модальное окно
+      const btn = document.querySelectorAll('[data-modal]');
+      const modalWindow = document.querySelector('.overlay');
+      const close = document.querySelector('.modal__close');
+      
+      function openModal() {
+            modalWindow.classList.add('active');
+         } 
+         btn.forEach(btn => {
+             btn.addEventListener('click', openModal);
+         });
+    
+    function closeModal() {
+        modalWindow.classList.remove('active');
+    }
+
+    close.addEventListener('click', closeModal);
+
+    modalWindow.addEventListener('click', closeModal);
 });

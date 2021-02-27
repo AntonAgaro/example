@@ -32,7 +32,7 @@
                         <div class="answers__text-question">Есть вопросы?</div>
                         <a href="" class="answers__text-phone">+7 (926) 423 01 00</a>
                     </div>
-                    <button class="answers__button">Перезвоните мне</button>
+                    <button data-modal="window" class="answers__button">Перезвоните мне</button>
                 </div>
 
             </div>
@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <button class="promo__button">Получить расчет</button>
+            <button data-modal="window" class="promo__button">Получить расчет</button>
         </div>
     </section>
 
@@ -430,6 +430,35 @@
     <a href="#top" class="pageup">
         <img src="icons/pageUp/chevron-circle-up-solid.svg" alt="arrow">
     </a>
+
+    <!--делаем модальное окно-->
+    <div class="overlay">
+        <div class="modal">
+            <div class="modal__close">&times;</div>
+            <div class="forms__text">
+                <div class="forms__text-title">Просто заполните форму заявки</div>
+                <div class="forms__text-subtitle">Ни мы перезвоним Вам в течение 10 минут!</div>
+            </div>
+            <form action="" class="forms__form">
+                <div class="forms__form-wrapper">
+                    <div class="forms__form-item">
+                        <input type="text" name="name" id="" placeholder="Ваше имя...">
+                    </div>
+                    <div class="forms__form-item">
+                        <input type="text" name="" id="" placeholder="Ваш номер телефона...">
+                    </div>
+                        <div class="forms__form-item">
+                            <input type="email" name="" id="" placeholder="Ваш email...">
+                        </div>
+                        <div class="forms__form-item forms__form-message" id="message">
+                            <input type="text" placeholder="Сообщение...">
+                        </div>
+                    </div>
+                    <button class="forms__form-button">Отправить заявку</button>
+            </form>
+        </div>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 
